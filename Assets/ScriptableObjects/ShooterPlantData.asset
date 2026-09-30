@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d320942e211cb44cadaf8f16fa8626f, type: 3}
+  m_Name: ShooterPlantData
+  m_EditorClassIdentifier: Assembly-CSharp::ShooterPlantData
+  appearSound: peashooter_appear
+  attackSound: peashooter_shoot
+  deathSound: peashooter_die
+  maxHealth: 200
+  damage: 25
+  range: 3
+  attackParticles: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+  bulletPrefab: {fileID: 7331048365538870338, guid: 0931b3aa2ef53bd4bae1284f95bb12f9, type: 3}
+  shootTime: 1
+  fireRate: 2
