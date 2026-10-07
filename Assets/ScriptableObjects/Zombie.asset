@@ -19,6 +19,8 @@ MonoBehaviour:
   attackCooldown: 2
   hitTime: 1
   attackParticles: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
-  attackSound: 
-  deathSound: 
-  appearSound: 
+  deathParticles: {fileID: 5077717521085502364, guid: 7af24f9f871d72449bbbb390abdf5f03, type: 3}
+  attackSound: zombie_attack
+  deathSound: zombie_die
+  appearSound: zombie_appear
+  hitSound: zombie_hit
