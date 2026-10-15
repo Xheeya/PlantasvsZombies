@@ -8,6 +8,7 @@ TagManager:
   - Zombie
   - Sun
   - FxTemporaire
+  - Zone
   layers:
   - Default
   - TransparentFX
