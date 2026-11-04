@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3468149640587873785}
   - component: {fileID: 7037478330196817414}
   - component: {fileID: 7729864832988412872}
+  - component: {fileID: 2584502464914936281}
   m_Layer: 8
   m_Name: NormalZombie
   m_TagString: Zombie
@@ -82,6 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zombie
   characterAnimator: {fileID: 7158499619211368501}
   initialRotationY: -90
+  blinkDuration: 3
   zombieData: {fileID: 11400000, guid: 3dec5285ac1742e43867c24c6defbe56, type: 2}
 --- !u!114 &7037478330196817414
 MonoBehaviour:
@@ -121,6 +123,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.69, y: 2.09, z: 0.73}
   m_Center: {x: 0, y: 1, z: 0.06}
+--- !u!114 &2584502464914936281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020609987609272289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660fa1d3bb1bf9c4ca5eda48d1669198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Blink
+  blinkInterval: 0.2
 --- !u!1001 &4018615175433388129
 PrefabInstance:
   m_ObjectHideFlags: 0

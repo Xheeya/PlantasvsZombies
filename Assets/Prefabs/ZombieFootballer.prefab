@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3246545354015596525}
   - component: {fileID: 4058403576741134103}
   - component: {fileID: 2835398501269691611}
+  - component: {fileID: 2789966247783729235}
   m_Layer: 8
   m_Name: ZombieFootballer
   m_TagString: Zombie
@@ -103,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Zombie
   characterAnimator: {fileID: 4750885080608880710}
   initialRotationY: 270
+  blinkDuration: 3
   zombieData: {fileID: 11400000, guid: c6f615d264e04144babfbbbfaf399e74, type: 2}
 --- !u!114 &2835398501269691611
 MonoBehaviour:
@@ -121,6 +123,19 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &2789966247783729235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4412051846287295391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660fa1d3bb1bf9c4ca5eda48d1669198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Blink
+  blinkInterval: 0.2
 --- !u!1001 &3877704010998263951
 PrefabInstance:
   m_ObjectHideFlags: 0
