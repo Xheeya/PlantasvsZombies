@@ -18,6 +18,26 @@ MonoBehaviour:
       spawnTime: 1
       laneIndex: 0
     - enemyPrefab: {fileID: 4412051846287295391, guid: 5237e2883099db1499d601105197a621, type: 3}
+      spawnTime: 2
+      laneIndex: 2
+    - enemyPrefab: {fileID: 2020609987609272289, guid: c58fe11579329a944a1296affdf49a39, type: 3}
+      spawnTime: 3
+      laneIndex: 4
+  - enemies:
+    - enemyPrefab: {fileID: 2020609987609272289, guid: c58fe11579329a944a1296affdf49a39, type: 3}
+      spawnTime: 1
+      laneIndex: 0
+    - enemyPrefab: {fileID: 4412051846287295391, guid: 5237e2883099db1499d601105197a621, type: 3}
+      spawnTime: 1
+      laneIndex: 2
+    - enemyPrefab: {fileID: 2020609987609272289, guid: c58fe11579329a944a1296affdf49a39, type: 3}
+      spawnTime: 1
+      laneIndex: 4
+  - enemies:
+    - enemyPrefab: {fileID: 2020609987609272289, guid: c58fe11579329a944a1296affdf49a39, type: 3}
+      spawnTime: 1
+      laneIndex: 0
+    - enemyPrefab: {fileID: 4412051846287295391, guid: 5237e2883099db1499d601105197a621, type: 3}
       spawnTime: 1
       laneIndex: 2
     - enemyPrefab: {fileID: 2020609987609272289, guid: c58fe11579329a944a1296affdf49a39, type: 3}
