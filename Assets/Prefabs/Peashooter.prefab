@@ -137,7 +137,7 @@ MonoBehaviour:
   characterAnimator: {fileID: 2620488766469177615}
   initialRotationY: 90
   blinkDuration: 3
-  price: 50
+  price: 100
   shooterPlantData: {fileID: 11400000, guid: ffe5425628fccfd459deec49bbbae57e, type: 2}
   shootPivot: {fileID: 2465075717321092478}
 --- !u!114 &969853914978255241

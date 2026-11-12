@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.Events;
-
+using System.Collections.Generic;
+ 
 public class PlantCreator : MonoBehaviour
 {
     [SerializeField]
     private float raycastDistance;
-    [SerializeField]
-    private LayerMask plantLayer;
+     [SerializeField]
+     private LayerMask plantLayer;
     [SerializeField]
     private SunManager sunManager;
     [SerializeField]
@@ -15,6 +16,7 @@ public class PlantCreator : MonoBehaviour
     private UnityEvent onPlantCancelled;
     [SerializeField]
     private GameObject plantPlacesParticlesPrefab;
+    private List<Plant> plants = new List<Plant>();
     private Transform objectToPlace;
     private bool objectPlaced;
     private Zone currentZone;
@@ -57,9 +59,17 @@ public class PlantCreator : MonoBehaviour
                 onPlantPlaced?.Invoke();
                 plant.SetZone(currentZone);
                 plant.Initialize();
+                plants.Add(plant);
                 PoolManager.Instance.GetObject(plantPlacesParticlesPrefab, objectToPlace.position);
             }
             objectToPlace = null;
+        }  
+    }
+    public void StopPlant()
+    {
+        foreach (Plant plant in plants)
+        {
+            plant.gameObject.SetActive(false);
         }
     }
     public void SetObjectToPlace(Transform obj)
@@ -68,4 +78,6 @@ public class PlantCreator : MonoBehaviour
         objectPlaced = false;
         currentZone = null;
     }
+ 
 }
+ 

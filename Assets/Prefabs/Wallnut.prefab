@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 977011116268803517}
   - component: {fileID: 5500262628031689174}
   - component: {fileID: 470276168244792958}
+  - component: {fileID: 2472653171255199255}
   m_Layer: 7
   m_Name: Wallnut
   m_TagString: Plant
@@ -69,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596ad013ecf79ce4fa8ca92b31d42012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  healthSlider: {fileID: 0}
+  healthSlider: {fileID: 6917223594610212430}
   onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -102,7 +103,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Wallnut
   characterAnimator: {fileID: 6184494407484613311}
   initialRotationY: 0
+  blinkDuration: 3
+  price: 50
   maxHealth: 100
+--- !u!114 &2472653171255199255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089071110370422142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660fa1d3bb1bf9c4ca5eda48d1669198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Blink
+  blinkInterval: 0.2
 --- !u!1001 &367213924253230768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -329,3 +345,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7541979507688576900, guid: 8bad60ba874cb294b8fafbda518f8c2f, type: 3}
   m_PrefabInstance: {fileID: 4223862613374824927}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6917223594610212430 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7305056982584741777, guid: 8bad60ba874cb294b8fafbda518f8c2f, type: 3}
+  m_PrefabInstance: {fileID: 4223862613374824927}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider

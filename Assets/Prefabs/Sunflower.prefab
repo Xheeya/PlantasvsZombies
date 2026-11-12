@@ -57,7 +57,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.13, y: 1.83, z: 1}
+  m_Size: {x: 1.85, y: 1.83, z: 1.52}
   m_Center: {x: 0, y: 0.91, z: 0}
 --- !u!114 &8927261046285969219
 MonoBehaviour:
@@ -118,6 +118,7 @@ MonoBehaviour:
   characterAnimator: {fileID: 3738419089328429573}
   initialRotationY: 180
   blinkDuration: 3
+  price: 50
   flowerData: {fileID: 11400000, guid: ee8cef313851e5c4fbbb516272fa2054, type: 2}
   zoneDetector: {fileID: 9139462854741534130}
 --- !u!1 &3785859535242524070
@@ -419,6 +420,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9a8e651cdbd77b5488db6d07009f98b9, type: 3}
       propertyPath: m_Name
       value: sunflower
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a8e651cdbd77b5488db6d07009f98b9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9a8e651cdbd77b5488db6d07009f98b9, type: 3}
+      propertyPath: m_TagString
+      value: Plant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
