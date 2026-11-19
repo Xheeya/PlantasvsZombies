@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 052f3c5a4b7c9fd46bcfb666143e31e8, type: 3}
   m_Name: BonkData
   m_EditorClassIdentifier: Assembly-CSharp::BonkData
-  appearSound: 
-  attackSound: 
-  deathSound: 
+  appearSound: Appear_Bonk
+  attackSound: Attack_Bonk
+  deathSound: Death_Bonk
   maxHealth: 200
   hitParticles: {fileID: 2708598583397607911, guid: 6398d43fe79ea0140913dc5530c646af, type: 3}
   damage: 25
-  range: 50
+  range: 4
   attackRate: 1
+  punchSound: Punch_Bonk
+  punchTime: 1
